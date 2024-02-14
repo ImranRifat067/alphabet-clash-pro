@@ -15,12 +15,16 @@
 
 <body class="anton-regular ">
     <main id="main" class="bg-center bg-[#1E1E1E] h-screen bg-no-repeat flex justify-center">
-        <section class="text-white text-center flex flex-col  justify-center hidden">
+        <!-- home section start -->
+        <section id ="home" class="text-white text-center flex flex-col  justify-center ">
             <h1 class="text-8xl">ALPHABET CLASH</h1>
             <p class="text-2xl mt-6">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-            <button class="btn w-32 mx-auto mt-20 ">Play Now</button>
+            <button onclick="play()" class="btn w-32 mx-auto mt-20 ">Play Now</button>
         </section>
-        <section class="space-y-20 mt-20 hidden">
+        <!-- home section ends -->
+
+        <!-- playground section start -->
+        <section id="play-ground" class="space-y-20 mt-20 hidden">
             <!-- screen -->
             <div class="flex justify-center">
                 <div
@@ -81,13 +85,19 @@
               
             </div>
         </section>
-        <section class="font-popping flex items-center">
+        <!-- playground section ends -->
+
+        <!-- score section start -->
+        <section class="font-popping flex items-center hidden">
             <div class="bg-[#ffffff33] flex flex-col gap-8 items-center text-white p-8 rounded-lg">
                 <span class="text-4xl">Score : 14</span>
                 <button class="btn">Play Again</button>
                 <p>Practice will make you Pro</p>
             </div>
         </section>
+        <!-- score section ends -->
+        <script src="script/utility.js"></script>i
+        <script src="script/script.js"></script>
     </main>
 </body>
 
